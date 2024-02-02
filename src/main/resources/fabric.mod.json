@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "stationreport",
+  "version": "${version}",
+  "name": "StationReport",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/JeffCodeSharing/StationReport"
+  },
+  "license": "unlicense",
+  "icon": "icon.ico",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.keusg.codeforfree.stationreport.client.StationReportClient"
+    ],
+    "main": [
+      "com.keusg.codeforfree.stationreport.StationReport"
+    ]
+  },
+  "mixins": [
+    "stationreport.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
